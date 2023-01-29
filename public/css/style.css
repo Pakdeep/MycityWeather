@@ -13,7 +13,7 @@ body {
 }
 
 .area {
-    margin: 2.5% auto 0px;
+    margin: 1.5% auto 0px;
     padding: 0;
     text-align: center;
     width: 100%;
@@ -26,15 +26,15 @@ body {
 
 .navbar {
     padding: 0 0 4.5rem;
-    margin: 0 8%;
+    margin: 0px 0px 0px 6%;
 }
-.navbar-nav{
-margin-left: 75%;
+
+.navbar-nav {
+    margin-left: 75%;
 }
 
 .nav-item {
     padding: 0 10px;
-
 }
 
 .nav-link {
@@ -170,7 +170,7 @@ hr.hr2 {
 #home {
     text-align: center;
     height: 20rem;
-    margin-top: 8%;
+    margin-top: 10%;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -211,21 +211,39 @@ hr.hr2 {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
 }
-.logo img{
+
+.logo img {
     border-radius: 100%;
     width: 20%;
 }
-form{
+
+.itsme {
     margin: 2% auto;
-        max-width: 420px;
+    width: 50%;
+    max-width: 100%;
     font-family: 'Ubuntu', sans-serif;
     border: solid 2px;
     padding: 2%;
 
 }
-form input{
+
+.itsme input {
     text-align: center;
 }
-form label{
+
+.itsme label {
     padding-top: 1%;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .itsme {
+        margin: 2% auto;
+        width: 100%;
+        /* max-width: 100%; */
+        font-family: 'Ubuntu', sans-serif;
+        border: solid 2px;
+        padding: 2%;
+
+    }
 }
