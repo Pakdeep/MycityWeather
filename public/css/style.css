@@ -25,26 +25,31 @@ body {
 }
 
 .navbar {
-    margin-bottom: 1%;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0 0 4.5rem;
+}
+.navbar-nav{
+margin-left: 80%;
 }
 
 .nav-item {
     padding: 0 18px;
+
 }
 
 .nav-link {
     font-size: 1.2rem;
+    font-family: 'Montserrat-black', sans-serif;
+    font-weight: bold;
+
+
+}
+
+.navbar-brand {
     font-family: 'Ubuntu', sans-serif;
-
-
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-#navbarNav {
-    position: absolute;
-    right: 0px;
-}
 
 .area .box {
     margin: 6% auto 0px;
@@ -93,7 +98,7 @@ button {
 
 }
 
- hr.hr1 {
+hr.hr1 {
     width: 60%;
     border-top: dotted 3px;
     margin: 3% auto 0px;
@@ -204,21 +209,21 @@ hr.hr2 {
 .logo {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-   
+
 
 }
 
 .logo img {
     width: 20%;
     border-radius: 100%;
-    
+
 }
 
 .logo .contact {
     width: 40rem;
     border: solid 2px;
-    margin: 1% auto 2% ;
-    }
+    margin: 1% auto 2%;
+}
 
 .logo .contact input {
     text-align: center;
