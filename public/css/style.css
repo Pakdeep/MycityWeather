@@ -210,24 +210,22 @@ hr.hr2 {
 .logo {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-
-
 }
-
-.logo img {
-    width: 20%;
+.logo img{
     border-radius: 100%;
-
+    width: 20%;
 }
-
-.logo .contact {
-    width: 40rem;
+form{
+    margin: 2% auto;
+        max-width: 420px;
+    font-family: 'Ubuntu', sans-serif;
     border: solid 2px;
-    margin: 1% auto 2%;
+    padding: 2%;
+
 }
-
-.logo .contact input {
+form input{
     text-align: center;
-    margin: 1%;
-
+}
+form label{
+    padding-top: 1%;
 }
