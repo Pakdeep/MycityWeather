@@ -60,8 +60,9 @@ app.post("/weather", function (req, res) {
         humidity: humidity,
         wind: wind,
         image:imageURL
-      });
+      }
 
+      ); 
     });
   });
 });
