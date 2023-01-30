@@ -103,38 +103,27 @@ button {
 }
 
 hr.hr1 {
-    width: 60%;
+    width: 70%;
     border-top: dotted 3px;
-    margin: 3% auto 0px;
+    margin: 0 auto 5%;
 }
 
 hr.hr2 {
-    width: 60%;
+    width: 70%;
     border-top: dotted 3px;
-    margin: 0 auto 0px;
+    margin: 5% auto 5%;
 }
 
 .weather .degree {
     font-size: 2rem;
 }
 
-.weather p {
-    margin-top: 3%;
-}
-
-.desc {
-    margin-top: 1%;
-}
 
 .desc p {
-    display: inline-block;
-    position: relative;
-    left: 1rem;
+    color:rgb(240, 141, 141);
 }
 
 .desc img {
-    position: relative;
-    right: 0.4rem;
     background-color: rgb(236, 166, 166);
     border-radius: 50%
 }
@@ -167,6 +156,7 @@ hr.hr2 {
     word-spacing: 50px;
     padding-left: 2rem;
     margin-top: 2%;
+    color:rgb(240, 141, 141);
 }
 
 .footer {
@@ -204,15 +194,14 @@ hr.hr2 {
     background: transparent;
 }
 
-#home button {
+/* #home button {
     border: none;
     outline: none;
     background: transparent;
     cursor: pointer;
     position: relative;
     right: 0;
-    /* padding-left: 3%; */
-}
+} */
 
 .logo {
     text-align: center;
