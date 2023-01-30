@@ -135,6 +135,8 @@ hr.hr2 {
 .desc img {
     position: relative;
     right: 0.4rem;
+    background-color: rgb(236, 166, 166);
+    border-radius: 50%
 }
 
 .humi-wind {
@@ -150,12 +152,14 @@ hr.hr2 {
 .humi-wind .humi {
     position: relative;
     right: 1.5rem;
+
 }
 
 .humi-wind .wind {
     display: inline-block;
     position: relative;
     left: 1.5rem;
+
 }
 
 .humi-wind .value {
