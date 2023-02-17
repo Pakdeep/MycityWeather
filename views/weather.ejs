@@ -1,48 +1,54 @@
 <%- include("partials/header")%>
+<div class="body">    
+<div class="area">
+        <h1 class="heading">Weather App</h1>
+        <form class="box" action="/weather" method="post">
+            <input class="cityName" name="Name" type="text" placeholder="City Name" autocomplete="off">
+            <label class="search-btn" for="city"><i class="fa fa-search fa-1.5x" aria-hidden="true"></i></label>
+            <button type="submit" id="city" style="display: none;"></button>
+        </form>
+        <div class="weather">
+            <h1 class="city">
+                <%=city%>
+            </h1>
+            <h6 class="date">
+                <%=date%>
+            </h6>
+            <h2>
+                <span class="temp">
+                    <%=temp%>
+                </span> °C
+            </h2>
+            <p>Feels Like: <span class="feels">
+                    <%=feel%>
+                </span> °C
+        </div>
+        <div class="desc">
+            <img src=<%=image%> alt="Description" width="50px">
 
-    <body
-        style="background-image: url('https://source.unsplash.com/1600x900/?<%=desc%>');background-repeat: no-repeat;">
-
-        <div class="area">
-            <h1 class="heading">Weather App</h1>
-            <div class="box">
-                <form action="/weather" method="post">
-                    <input class="cityName" name="Name" type="text" placeholder="City Name" autocomplete="off">
-                    <button type="submit"><i class="fa fa-search fa-1.5x" aria-hidden="true"></i></button>
-                </form>
+            <p>
+                <%=desc%>
+            </p>
+        </div>
+        <div class="humidity">
+            <div class="image">
+                <img class="humi-img" src="images/humidity.png" alt="humidity">
+                <img class="wind-img" src="images/wind.png" alt="Wind">
             </div>
-            <div class="weather">
-                <h1 class="city">
-                    <%=city%>
-                </h1>
-                <h6 class="date">
-                    <%=date%>
-                </h6>
-                <h1 class="temp">
-                    <%=temp%>°<span class="degree">C</span>
-                </h1>
-                <p>Feels Like: <span style="color: rgb(240, 141, 141);"><%=feel%>°<span>C</span></span></p>
+            <div class="name">
+                <p class="humi-name">Humidity</p>
+                <p class="wind-name">Wind</p>
             </div>
-            <hr class="hr1">
-            <div class="desc">
-                <img src=<%=image%> alt="Description" width="50px">
-                
-                <p>
-                    <%=desc%>
+            <div class="value">
+                <p class="humi-value">
+                    <%=humidity%>%
                 </p>
-            </div>
-            <hr class="hr2">
-            <div class="humi-wind">
-                <img class="humi" src="images/humidity.png" alt="humidity">
-                <img class="wind" src="images/wind.png" alt="humidity">
-                <p class="humidity">Humidity Wind</p>
-
-                <p class="value">
-                    <%=humidity%>% <%=wind%>km/hr
+                <p class="wind-value">
+                    <%=wind%>km/hr
                 </p>
-                <p class="footer">©DeepJais</p>
             </div>
         </div>
-    </body>
+    </div>
+</div>
 
-    <%- include("partials/footer")%>
+    

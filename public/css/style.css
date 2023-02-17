@@ -1,258 +1,533 @@
+:root {
+    --color: rgb(240, 141, 141);
+}
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(218, 158, 158);
-
-}
-
-.heading {
-    padding-top: 5%;
+.body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .area {
-    margin: 1.5% auto 0px;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    max-width: fit-content;
-    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    height: auto;
+    width: 22%;
+    height: 100%;
+    /* margin: auto; */
+    background-color: black;
     border-radius: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #0d0c0ccc;
-    color: rgb(247, 230, 230);
-
 }
 
-.navbar {
-    padding: 0 0 4.5rem;
-    margin: 0px 0px 0px 6%;
+.area .heading {
+    margin-top: 10px;
 }
-
-.navbar-nav {
-    margin-left: 75%;
-}
-
-.nav-item {
-    padding: 0 10px;
-}
-
-.nav-link {
-    font-size: 1.2rem;
-    font-family: 'Montserrat-black', sans-serif;
-    font-weight: bold;
-
-
-}
-
-.navbar-brand {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
 
 .area .box {
-    margin: 6% auto 0px;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    width: 80%;
-    height: 2rem;
-    background-color: rgb(240, 141, 141);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.cityName {
+.area .box label {
+    font-size: 20px;
+    padding-top: 5px;
+    color: var(--color);
+}
 
-    border-radius: 50px;
+.area .box input {
+    border: none;
+    border-bottom: 1px solid var(--color);
+    background: transparent;
     text-align: center;
-    color: whitesmoke;
-    border: none;
+    padding-bottom: 5px;
     outline: none;
-    width: 75%;
-    height: 2rem;
-    font-size: 1.2rem;
-    background: transparent;
+    color: white;
+    margin-left: 30px;
 }
 
-button {
-    border: none;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
-    margin-left: 2%;
+.area .weather {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.city {
-    margin-top: 6%;
-    margin-bottom: 0px;
-}
-
-.date {
-    margin: 0px;
-
-}
-
+.area .weather .city,
+.feels,
 .temp {
-    margin-top: 5%;
-    font-size: 4rem;
-    color: rgb(240, 141, 141);
+    color: var(--color)
+}
+
+.area .humidity {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 60%;
+}
+
+.area .humidity .image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-hr.hr1 {
-    width: 70%;
-    border-top: dotted 3px;
-    margin: 0 auto 5%;
+.area .humidity .image .humi-img {
+    padding-left: 5px;
 }
 
-hr.hr2 {
-    width: 70%;
-    border-top: dotted 3px;
-    margin: 5% auto 5%;
+.area .humidity .image .wind-img {
+    padding-right: 10px;
 }
 
-.weather .degree {
-    font-size: 2rem;
+.area .humidity .name .wind-name {
+    padding-right: 15px;
 }
 
+.area .humidity .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.desc p {
-    color:rgb(240, 141, 141);
-}
-
-.desc img {
-    background-color: rgb(236, 166, 166);
-    border-radius: 50%
-}
-
-.humi-wind {
-    margin-top: 2%;
-}
-
-.humi-wind .humidity {
-    margin-bottom: 0.3rem;
-    word-spacing: 45px;
-}
-
-
-.humi-wind .humi {
-    position: relative;
-    right: 1.5rem;
 
 }
 
-.humi-wind .wind {
+.area .humidity .name p {
+    margin-bottom: 5px;
+}
+
+.area .humidity .value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.area .humidity .value p {
+    margin-bottom: 5px;
+
+}
+
+.area .humidity .value .humi-value {
+    padding-left: 18px;
+}
+
+.area .humidity .value .wind-value {
+    padding-left: 10px;
+}
+
+.area .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area .desc p {
+    color: var(--color);
+    font-size: 20px;
+}
+
+
+.area .value p {
+    color: var(--color);
+}
+
+
+
+.navbar .navbar-brand {
+    padding-left: 10%;
     display: inline-block;
-    position: relative;
-    left: 1.5rem;
+}
+
+.navbar .navbar-brand img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar ul {
+    position: absolute;
+    right: 10%;
+    gap: 30px;
+    z-index: 5;
 
 }
 
-.humi-wind .value {
-    margin-bottom: 0px;
-    word-spacing: 50px;
-    padding-left: 2rem;
-    margin-top: 2%;
-    color:rgb(240, 141, 141);
+.navbar ul li {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.footer {
-    padding-top: 7px;
+.navbar ul li:hover {
+    font-size: 25px;
 }
 
-/* //Weather.ejs */
+
+
+
+
+/* this is for home.ejs */
 #home {
-    text-align: center;
-    height: 20rem;
-    margin-top: 10%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
+    gap: 10px;
 }
 
 #home .box {
-    margin: 1% auto 0px;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    width: 35%;
-    height: 2rem;
-    background-color: rgb(240, 141, 141);
-    padding-left: 5%;
+    background-color: var(--color);
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
 }
 
-#home .cName {
-    border-radius: 50px;
+#home .box form {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+#home .box form input {
+    width: 100%;
+    background: transparent;
+    border-radius: 20px;
     text-align: center;
-    color: whitesmoke;
     border: none;
+    color: white;
     outline: none;
-    width: 75%;
-    height: 2rem;
-    font-size: 1.2rem;
-    background: transparent;
+    font-size: 25px;
+    padding-left: 15%;
 }
 
-/* #home button {
-    border: none;
-    outline: none;
-    background: transparent;
+#home .box form input::placeholder {
+    color: rgb(221, 214, 214);
+    font-size: 20px;
+}
+
+#home .box form label {
+    height: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
     cursor: pointer;
+    background: transparent;
+    width: 25%;
+    justify-content: center;
+}
+
+#home .box form label:hover {
+    font-size: 18px;
+}
+
+
+
+
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer .all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+  
+}
+
+footer .all p {
+    color: var(--color);
+}
+
+footer .all .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .all .links a {
+    text-decoration: none;
+}
+
+footer .all .links .fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: var(--color);
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+footer .links .fa:hover {
+    font-size: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
     position: relative;
-    right: 0;
-} */
-
-.logo {
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
 }
 
-.logo img {
-    border-radius: 100%;
-    width: 20%;
+.contact .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.itsme {
-    margin: 2% auto;
+.contact .logo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-blend-mode: color-burn;
+}
+
+
+
+.contact .itsme {
+    background-color: var(--color);
     width: 50%;
-    max-width: 100%;
-    font-family: 'Ubuntu', sans-serif;
-    border: solid 2px;
-    padding: 2%;
-    background-color: rgb(240, 141, 141);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.contact .itsme label {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.contact .itsme input {
+    padding-left: 25px;
+    font-size: 20px;
+    color: var(--color);
+}
+
+.contact .itsme input::placeholder {
+    font-size: 15px;
+    color: gray;
+}
+
+.contact .itsme .btn {
+    display: block;
+    margin: auto;
+}
+
+.contact .itsme .btn:hover {
+    background-color: var(--color);
+    color: white;
+    
+}
+
+@media only screen and (max-width:480px) {
+    .contact .logo img {
+        width: 100px;
+        height: 100px;
+    }
+    .contact .logo h2{
+        font-size: 1.5rem;
+    }
+    .contact .itsme{
+        width: 95%;
+    }
+
+}@media only screen and (min-width:480px) and (max-width:800px) {
+    .contact .logo img {
+        width: 150px;
+        height: 150px;
+    }
+    .contact .logo h2{
+        font-size: 1.8rem;
+    }
+    .contact .itsme{
+        width: 90%;
+    }
 
 }
 
-.itsme input {
-    text-align: center;
-}
 
-.itsme label {
-    padding-top: 1%;
-}
 
-@media only screen and (max-width: 700px) {
 
-    .itsme {
-        margin: 2% auto;
-        width: 100%;
-        /* max-width: 100%; */
-        font-family: 'Ubuntu', sans-serif;
-        border: solid 2px;
-        padding: 2%;
+@media only screen and (max-width: 480px) {
+    #home .box {
+        width: 80%;
+    }
 
+    #home .box form label {
+        width: 10%;
+    }
+
+    #home .box form input {
+        font-size: 20px;
+    }
+
+    #home .box form input::placeholder {
+        font-size: 15px;
+    }
+
+    #home .box form label span {
+        display: none;
+    }
+
+    .navbar .navbar-brand {
+        padding-left: 1%;
+    }
+
+    .navbar ul {
+        gap: 0;
+        right: 20px;
+    }
+
+    .navbar ul .nav-link {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .navbar .navbar-toggler {
+        margin-right: 1%;
+    }
+
+    footer .all {
+        position: absolute;
+        bottom: 5px;
+        align-self: flex-end;
     }
 }
-footer{
-margin:2% 0;    text-align: center;
-    font-size: 20px;
 
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    #home .box {
+        width: 70%;
+    }
+
+    #home .box form input {
+        font-size: 20px;
+    }
+
+    #home .box form label {
+        width: 15%;
+    }
+
+    #home .box form input::placeholder {
+        font-size: 15px;
+    }
+
+    #home .box form label span {
+        display: block;
+    }
+
+    .navbar .navbar-brand {
+        padding-left: 2%;
+    }
+
+    .navbar ul {
+        gap: 0;
+        right: 8px;
+    }
+
+    .navbar ul .nav-link {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .navbar .navbar-toggler {
+        margin-right: 2%;
+    }
+
+    footer .all {
+        position: absolute;
+        bottom: 5px;
+        align-self: flex-end;
+    }
 }
-footer .fa{
-    background-color: black;
-    color: rgb(240, 141, 141);
-padding: 0.5%;
-margin-left:10px;
-border-radius: 35%;
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    #home .box {
+        width: 55%;
+    }
+
+    #home .box form input {
+        font-size: 20px;
+    }
+
+    #home .box form input::placeholder {
+        font-size: 15px;
+    }
+
+    #home .box form label span {
+        display: block;
+    }
+
+    .navbar .navbar-brand {
+        padding-left: 2%;
+    }
+
+    .navbar ul {
+        gap: 0;
+        right: 19px;
+    }
+
+    .navbar ul .nav-link {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .navbar .navbar-toggler {
+        margin-right: 2%;
+    }
+
+    footer .all {
+        position: absolute;
+        bottom: 5px;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .area {
+        width: 60%;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:760px) {
+    .area {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:1100px) {
+    .area {
+        width: 30%;
+    }
 }

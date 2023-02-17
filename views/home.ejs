@@ -4,8 +4,11 @@
         <h1>The Weather App</h1>
         <div class="box">
             <form action="/weather" method="post">
-                <input class="cName" name="Name" type="text" placeholder="City Name" autocomplete="off">
-                <button type="submit"><i class="fa fa-search fa-1.5x" aria-hidden="true"></i> Search</button>
+                <input class="cName" name="Name" type="text" placeholder="City Name" autocomplete="off" required>
+                <label for="search"><i class="fa fa-search fa-1.5x" aria-hidden="true"></i><span>Search</span></label>
+                <button type="submit" id="search" style="display: none;"></button>
             </form>
         </div>
     </div>
+<%- include("partials/footer")%>
+
