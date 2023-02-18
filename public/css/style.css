@@ -20,9 +20,9 @@
     align-items: center;
     gap: 9px;
     color: white;
-    max-height: 700px;
-    max-width: 400px;
-    height: 95vh;
+    max-height: 800px;
+    max-width: 350px;
+    height: 98vh;
     width: 25%;
     background-color: black;
     border-radius: 30px; 
@@ -296,33 +296,37 @@ footer .links .fa:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    gap: 20px;
-    max-height: 900px;
-    height: 100vh;
+    gap: 20px; 
 }
 
 .contact .logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .contact .logo img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background-blend-mode: color-burn;
 }
-
-
+.contact .logo .mail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.contact .logo .mail .at{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 .contact .itsme {
     background-color: var(--color);
-    width: 50%;
     padding: 10px;
     border-radius: 10px;
+    width: 60%;
 }
 
 .contact .itsme label {
@@ -330,8 +334,7 @@ footer .links .fa:hover {
     padding-left: 10px;
 }
 
-.contact .itsme input,
-textarea {
+.contact .itsme input {
     padding-left: 25px;
     font-size: 20px;
     color: var(--color);
@@ -460,7 +463,7 @@ textarea {
 
     #home .box form label span {
         display: block;
-        padding-right: 25px;
+        padding-right: 30px;
     }
 
     .navbar .navbar-brand {
@@ -485,7 +488,7 @@ textarea {
     .area {
         width: 80%;
         margin-top: 55px;
-        gap: 25px;
+        gap: 30px;
     
     }
 
@@ -526,7 +529,7 @@ textarea {
 
     .area {
         width: 55%;
-        gap: 25px;
+        gap: 30px;
     }
 
     .navbar .navbar-brand {
@@ -545,6 +548,9 @@ textarea {
 
     .navbar .navbar-toggler {
         margin-right: 2%;
+    }
+    .contact .itsme {
+        width: 75%;
     }
 
 }
