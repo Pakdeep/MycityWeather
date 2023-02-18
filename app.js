@@ -34,6 +34,7 @@ app.post("/weather", function (req, res) {
   let day = today.toLocaleDateString("en-us", options);
   let keyId = "0f3409f75be5e1ef679bcec06769610c";
   let units = "metric";
+
   const link =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     cname +
@@ -70,3 +71,5 @@ app.post("/weather", function (req, res) {
 app.listen(process.env.PORT || 1998, function () {
   console.log("app listening to port 1998");
 });
+
+

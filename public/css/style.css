@@ -18,10 +18,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
+    gap: 10px;
     color: white;
-    height: 100vh;
-
+    max-height: 700px;
+    max-width: 400px;
+    height: 95vh;
     width: 25%;
     background-color: black;
     border-radius: 30px; 
@@ -292,6 +293,7 @@ footer .links .fa:hover {
     align-items: center;
     width: 100vw;
     gap: 20px;
+    max-height: 900px;
     height: 100vh;
 }
 
@@ -362,7 +364,7 @@ textarea {
     }
 
     #home .box {
-        width: 80%;
+        width: 90%;
     }
 
     #home .box form label {
@@ -436,7 +438,7 @@ textarea {
     }
 
     #home .box {
-        width: 70%;
+        width: 80%;
     }
 
     #home .box form input {
